@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(./img/cafeteriapic.jpg);
+   
+}
+
+nav {
+    background-color: rgb(42, 13, 18);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-style: groove; 
+    border-color: rgb(231, 148, 17); ;
+    cursor: pointer;
+}
+
+ul {
+    color: rgb(231, 148, 17);
+    list-style: none;
+    display: flex;
+    margin-right: 300px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: 'Bona Nova', serif;
+  
+    
+}
+
+li {
+    margin: 0 15px;
+    
+}
+
+
+.logo {
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.nav-childs:hover {
+    background-color: rgb(96, 60, 17);
+
+}
+.container-1 input#search{
+    width: 200px;
+    height: 30px;
+    background: #fff;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 30;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  
+ 
