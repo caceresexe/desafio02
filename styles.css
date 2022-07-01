@@ -4,63 +4,203 @@
 }
 
 body {
-    background-image: url(./img/cafeteriapic.jpg);
+    background-color: black;
    
 }
-
+header {
+    width: 100%;
+    height: 130px;
+    background-color: #2A0D12;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 nav {
-    background-color: rgb(42, 13, 18);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     flex-direction: row;
-    border-style: groove; 
-    border-color: rgb(231, 148, 17); ;
-    cursor: pointer;
+   
 }
-
-ul {
-    color: rgb(231, 148, 17);
+nav ul li {
     list-style: none;
-    display: flex;
-    margin-right: 300px;
-    margin-left: 100px;
-    font-size: 20px;
-    font-family: 'Bona Nova', serif;
-  
-    
+    display: inline-flex;
+    margin: 0 30px;
+    position: relative;
+
 }
-
-li {
-    margin: 0 15px;
-    
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
 }
+nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #E79411;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+nav ul li:hover::before {
+    width: 100%;
 
+}
+footer{
+    width: 100%;
+    background-size:none;
+    background-color: #2A0D12;
 
+}
 .logo {
-    height: 100px;
-    border-radius: 100%;
-    margin-left: 10px;
+        width: 130px;
+        cursor: pointer;
+} 
+.container-hero{
+    width: 100%; height: 600px;
+    position: relative;
+}
+.hero{
+    width: 100%; height: 100%;
+    background: url("./img/brunchy.jpg");
+    background-attachment: fixed;
+}
+.content{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,11,0.6);
+}
+.content .info{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+.content .info h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.content .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #E79411;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border: 2px solid transparent;
+    transition: all 300ms ease;
+    letter-spacing: 0.5px; 
+}
+.content .info a:hover{
+    background: transparent; 
+    border: 2px solid #fff;
 }
 
-.nav-childs:hover {
-    background-color: rgb(96, 60, 17);
+.container-article{
+    width: 100%; height: 600px;
+    position: relative;
+}
+.article{
+    width: 100%; height: 100%;
+    background: url("./img/brunchy2.jpg");
+    background-attachment: fixed;
+}
+.content2{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,11,0.6);
+}
+.content2 .info2{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+.content2 .info2 h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.content2 .info2 p {
+    color: #fff;
+    font-size: 30px;
 
 }
-.container-1 input#search{
-    width: 200px;
-    height: 30px;
-    background: #fff;
-    border: none;
-    font-size: 10pt;
-    float: left;
-    color: #63717f;
-    padding-left: 30;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+
+
+
+
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 100%;
   }
 
-  
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box-footer h2{
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.box-footer li {
+    list-style: none;
+    color: #E79411;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+.box-footer a{
+    color: #E79411;
+    font-weight: 600;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+.box-copyright{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.box-copyright p{
+    margin-top: 5px;
+    color: #E79411;
  
+}
+
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color:#E79411;
+}
